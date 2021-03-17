@@ -2,8 +2,20 @@ import * as echarts from 'echarts'
 
 const main = document.getElementById('main')
 const loadMoreButton = document.getElementById('loadMore')
-const xData = ['2020-01-01', '2020-02-01', '2020-03-01', '2020-04-01']
-const values = [1, 2, 3, 4]
+let n = 0, m = 0
+
+function createKey() {
+  n += 1
+  return `2020-01- ${n}`
+}
+
+function createValue() {
+  m += 1
+  return m
+}
+
+let xData = [createKey(), createKey(), createKey(), createKey()]
+let values = [createValue(), createValue(), createValue(), createValue()]
 // 基于准备好的dom，初始化echarts实例
 const myChart = echarts.init(main, 'Light')
 
@@ -45,14 +57,16 @@ myChart.setOption(
 
 
 loadMoreButton.addEventListener('click', () => {
-  const key = '2020-05-01'
-  const value = '5'
+  let key = createKey()
+  let value = createValue()
+  xData = [...xData, key]
+  values = [...values, value]
   myChart.setOption({
     xAxis: {
-      data: [...xData, key]
+      data: xData
     },
     series: [{
-      data: [...values, value]
+      data: values
     }
     ]
   })
