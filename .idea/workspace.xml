@@ -32,7 +32,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615893491584</updated>
       <workItem from="1615893492641" duration="2697000" />
-      <workItem from="1615950232918" duration="11236000" />
+      <workItem from="1615950232918" duration="16856000" />
     </task>
     <servers />
   </component>
@@ -48,17 +48,9 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="1118" y="656" width="837" height="362" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1615953188763" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main.js</url>
-          <line>69</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="1193" y="137" key="run.anything.popup" timestamp="1615983033164">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="1193" y="137" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1615983033164" />
   </component>
 </project>
